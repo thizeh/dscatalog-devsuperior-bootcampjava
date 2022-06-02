@@ -47,7 +47,7 @@ public class CategoryService {
 		
 	}
 
-	@Transactional(readOnly = true)
+	@Transactional
 	public CategoryDTO insert(CategoryDTO dto) {
 		Category entity = new Category();
 		entity.setName(dto.getName());
